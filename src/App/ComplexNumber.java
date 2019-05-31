@@ -37,7 +37,7 @@ public final class ComplexNumber {
     public int hashCode() {
         final int prime = 31;
         int hashCode;
-        hashCode = (int) (this.imaginary * this.real) * prime;
+        hashCode = (int) (this.imaginary * this.real * prime * Math.PI);
         return hashCode;
     }
 }

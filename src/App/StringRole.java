@@ -2,7 +2,7 @@ package App;
 
 public class StringRole {
 
-    public String printTextPerRole(String[] text, String[] roles) {
+    public static String printTextPerRole(String[] text, String[] roles) {
 
         StringBuilder buffer = new StringBuilder();
 
@@ -21,5 +21,5 @@ public class StringRole {
         }
         return (buffer.toString());
     }
-
 }
+
