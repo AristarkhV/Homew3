@@ -4,28 +4,22 @@ public class StringRole {
 
     public String printTextPerRole(String[] text, String[] roles) {
 
-        String[] newText = new String[roles.length];
         StringBuilder buffer = new StringBuilder();
 
-        for (int i = 0; i < roles.length; i++) {
-            buffer.delete(0, buffer.length());
-            buffer.append(roles[i])
-                    .append(": \n");
-            for (int j = 0; j < text.length; j++) {
-                if (text[j].startsWith(roles[i])) {
+        for (String role : roles) {
+            buffer.append(role + ":\n");
+            for (int i = 0; i < text.length; i++) {
+                if (text[i].startsWith((role) + ":")) {
                     buffer
-                            .append(text[j]
-                                    .replace(roles[i], (j + 1) + ")")
-                                    .replace("):", ")"))
+                            .append((i + 1))
+                            .append(")")
+                            .append(text[i].substring(role.length() + 1))
                             .append("\n");
-                    newText[i] = buffer.toString();
                 }
             }
+            buffer.append("\n");
         }
-        buffer.delete(0, buffer.length());
-        for (int i = 0; i < newText.length; i++)
-            buffer.append(newText[i])
-                    .append("\n");
         return (buffer.toString());
     }
+
 }
