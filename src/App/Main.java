@@ -10,11 +10,11 @@ public class Main {
         int[] resultArray = bufferArray.mergeArrays(firstArray, secondArray);
         for (int i = 0; i < 6; i++) System.out.print(resultArray[i] + " ");
         System.out.println("\n\n");
-        String [] roles= {
-                "Городничий","Аммос Федорович",
+        String[] roles = {
+                "Городничий", "Аммос Федорович",
                 "Артемий Филиппович",
                 "Лука Лукич"};
-        String [] textLines={"Городничий: Я пригласил вас, господа, с тем, чтобы сообщить вам пренеприятное известие: к нам едет ревизор.",
+        String[] textLines = {"Городничий: Я пригласил вас, господа, с тем, чтобы сообщить вам пренеприятное известие: к нам едет ревизор.",
                 "Аммос Федорович: Как ревизор?",
                 "Артемий Филиппович: Как ревизор?",
                 "Городничий: Ревизор из Петербурга, инкогнито. И еще с секретным предписаньем.",
@@ -22,10 +22,7 @@ public class Main {
                 "Артемий Филиппович: Вот не было заботы, так подай!",
                 "Лука Лукич: Господи боже! еще и с секретным предписаньем!"};
         StringRole text = new StringRole();
-        String[] buffer = text.printTextPerRole(textLines, roles);
-        for (int i = 0; i < buffer.length; i++) {
-            System.out.println(buffer[i]);
-        }
+        System.out.println(text.printTextPerRole(textLines, roles));
 
         ComplexNumber firstNumber = new ComplexNumber(2.25, 2.255);
         ComplexNumber secondNumber = new ComplexNumber(2.25, 2.25);
