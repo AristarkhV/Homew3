@@ -1,8 +1,8 @@
 package App;
 
-public class MargeSort {
+public class MargeArrays {
 
-    public int[] Sort(int[] firstArray, int[] secondArray) {
+    public int[] mergeArrays(int[] firstArray, int[] secondArray) {
 
         int[] newArray = new int[firstArray.length + secondArray.length];
         int firstCounter = 0, secondCounter = 0;
