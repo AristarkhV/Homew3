@@ -10,12 +10,10 @@ public final class ComplexNumber {
     }
 
     public double getRe() {
-
         return real;
     }
 
     public double getIm() {
-
         return imaginary;
     }
 

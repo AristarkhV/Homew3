@@ -6,15 +6,7 @@ public class Robot {
     private int currentY = 0;
     public Direction currentDirection;
 
-    public enum Direction {
-        UP,
-        DOWN,
-        LEFT,
-        RIGHT
-    }
-
     public Robot() {
-
         currentDirection = Direction.UP;
     }
 

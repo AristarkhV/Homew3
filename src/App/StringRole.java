@@ -3,9 +3,7 @@ package App;
 public class StringRole {
 
     public static String printTextPerRole(String[] text, String[] roles) {
-
         StringBuilder buffer = new StringBuilder();
-
         for (String role : roles) {
             buffer.append(role + ":\n");
             for (int i = 0; i < text.length; i++) {
@@ -22,4 +20,3 @@ public class StringRole {
         return (buffer.toString());
     }
 }
-

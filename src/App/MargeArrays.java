@@ -3,7 +3,6 @@ package App;
 public class MargeArrays {
 
     public int[] mergeArrays(int[] firstArray, int[] secondArray) {
-
         int[] newArray = new int[firstArray.length + secondArray.length];
         int firstCounter = 0, secondCounter = 0;
 

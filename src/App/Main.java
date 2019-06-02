@@ -4,8 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] firstArray = {0, 2, 2, 8},
-                secondArray = {1, 3};
+        int[] firstArray = {0, 2, 2, 8};
+        int[] secondArray = {1, 3};
         MargeArrays bufferArray = new MargeArrays();
         int[] resultArray = bufferArray.mergeArrays(firstArray, secondArray);
         for (int i = 0; i < 6; i++) System.out.print(resultArray[i] + " ");
@@ -23,13 +23,11 @@ public class Main {
                 "Лука Лукич: Господи боже! еще и с секретным предписаньем!"};
         StringRole text = new StringRole();
         System.out.println(text.printTextPerRole(textLines, roles));
-
         ComplexNumber firstNumber = new ComplexNumber(2.25, 2.255);
         ComplexNumber secondNumber = new ComplexNumber(2.25, 2.25);
         System.out.println(firstNumber.equals(secondNumber));
         System.out.println(firstNumber.hashCode());
         System.out.println(secondNumber.hashCode());
-
         int toX = 3, toY = 0;
         Robot andrey = new Robot();
         andrey.moveRobot(andrey, toX, toY);
